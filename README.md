@@ -1,20 +1,20 @@
 # PyCurrencyConversion
 PyCurrencyConversion is a free library for foreign exchange rates and conversions.
 
-##Features:
+## Features:
 - Show all conversion rates for one currency (ex. USD to all others)
 - Show conversion rate for one currency to another (ex. CAD to CNY)
 - Convert amount from one currency to another (ex. USD $10 to CNY)
 
-##Source:
+## Source:
 The conversion rates are taken from https://exchangeratesapi.io/, a free API published by the European Central Bank.
 
-##Installation:
+## Installation:
 Directly clone repository, then
 
     python setup.py install
     
-##Examples:
+## Examples:
 Initialize class:
 
     python
