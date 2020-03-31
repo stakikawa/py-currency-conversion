@@ -5,6 +5,7 @@ from decimal import Decimal
 class RatesNotAvailableError(Exception):
     pass
 
+
 class CurrencyRate:
 
     def _source_url(self):
@@ -13,12 +14,12 @@ class CurrencyRate:
     def _decode_rates(self, response):
         rates = response.json().get('rates')
         for k, v in rates.items():
-            rates[k] = Decimal(v)
+            rates[k] = round(Decimal(v), 4)
         return rates
 
     def _decode_rate(self, response):
         [(k, v)] = response.json().get('rates').items()
-        return Decimal(v)
+        return round(Decimal(v), 4)
 
     def get_rate_all(self, base):
         params = {'base': base}

@@ -24,12 +24,12 @@ Initialize class:
 Show all conversion rates for one currency:
 
     >>> c.get_rate_all('USD')
-    {'CAD': Decimal('1.4161682073999999342817091019242070615291595458984375'), 'HKD': Decimal('7.75412361790000037586878534057177603244781494140625'), ...}
+    {'CAD': Decimal('1.4162'), 'HKD': Decimal('7.7541'), 'ISK': Decimal('139.8405'), 'PHP': Decimal('50.9299'), 'DKK': Decimal('6.7670'), 'HUF': Decimal('325.1042'), 'CZK': Decimal('24.7553'), ...}
 
 Show conversion rate for one currency to another:
 
     >>> c.get_rate('USD', 'JPY')
-    Decimal('108.1566068515000011984739103354513645172119140625')
+    Decimal('108.1566')
 
 Convert amount from one currency to another:
     
